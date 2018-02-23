@@ -33,7 +33,7 @@ PLATFORMS
 DEPENDENCIES
   cron_info!
   pry
-  rake
+  rake (>= 10)
   rspec (~> 3.7.0)
 
 BUNDLED WITH
