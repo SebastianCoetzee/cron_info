@@ -95,7 +95,7 @@ module CronInfo
     end
 
     def is_word_range?(string)
-      !!(string =~ /^[a-z|A-Z]+-[a-z|A-Z]+$/) && string.split("-").size == 2
+      !!(string =~ /^[a-z|A-Z]+-[a-z|A-Z]+$/)
     end
 
     def is_word?(string)
