@@ -59,6 +59,23 @@ day of week   1 2 3 4 5
 command       /usr/bin/find
 ```
 
+The command also supports named months and days:
+
+```
+cron_info "*/15,1,1-5,34-50" 0 1,15 Jan-Apr,Nov Mon,Thu-Sat echo hello
+```
+
+Output:
+
+```
+minute        0 1 2 3 4 5 15 30 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50
+hour          0
+day of month  1 15
+month         1 2 3 4 11
+day of week   1 4 5 6
+command       echo hello
+```
+
 # Testing
 
 After cloning the repository as explained above, from the root of the repository, run the following:
